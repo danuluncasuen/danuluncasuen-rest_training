@@ -10,7 +10,7 @@ import static org.springframework.http.HttpStatus.*;
 
 @ControllerAdvice
 public class ExceptionsHandler {
-    @ExceptionHandler(value = {CustomUserServiceException.class})
+    @ExceptionHandler(CustomUserServiceException.class)
     public ResponseEntity<Object> handleCustomExceptions(Exception exception) {
         return new ResponseEntity<>(new ErrorResponseObject(exception.getMessage()),
                     ((CustomUserServiceException) exception).getResponseCode());

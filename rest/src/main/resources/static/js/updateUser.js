@@ -3,8 +3,8 @@ $(document).ready(() => {
     $.ajax({
         url: `/rest/users/${id}`,
         method: "GET",
-        success: users => {
-            fillInputs(users);
+        success: user => {
+            fillInputs(user);
         },
         error: err => {
             const errorObj = err.responseJSON;

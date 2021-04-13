@@ -181,8 +181,6 @@ i
 9.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml,9\a\9a1f3207f970c71845551528467e0a9cd1192101
 b
 2.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml,1\d\1daa2a9cb5a9a1949b6fac89aef50d7d923783fe
-^
-.rest/src/main/resources/application.properties,6\6\6630fc631c095d64dac42f770a271aea66bf87e3
 h
 8rest/src/main/java/com/internship/rest/daos/UserDAO.java,a\0\a0cecda1a8b8570f8e80148bdcab8acecbee0eeb
 k
@@ -207,14 +205,8 @@ w
 Grest/src/main/java/com/internship/rest/controllers/IndexController.java,c\e\cea22574c7b6fd67326189aca13b6e7a99e3010f
 l
 <rest/src/main/java/com/internship/rest/entities/UserDTO.java,c\2\c2f78e42cd2272049cd78d2cf32a0fd8fb2ecca0
-[
-+rest/src/main/resources/static/addUser.html,b\b\bbc44906fbc51988dc8eceaa5e61199ceb3908bd
 p
 @rest/src/main/java/com/internship/rest/services/UserService.java,9\c\9c7c4394a51f7a318df5bf3104e786a97cd9b8a1
-^
-.rest/src/main/resources/static/updateUser.html,1\d\1d27a463635330371c8cab94db70d99d6a4706ca
-_
-/rest/src/main/resources/static/js/updateUser.js,4\b\4b95697532f8eace725d993761093762dc306a9d
 ˆ
 Xrest/src/main/java/com/internship/rest/exceptionshandler/CustomUserServiceException.java,7\9\79a9f4f06a3a876a62b29984f7b201ac7545af23
 
@@ -223,3 +215,5 @@ Qrest/src/main/java/com/internship/rest/exceptionshandler/ErrorResponseObject.ja
 Orest/src/main/java/com/internship/rest/exceptionshandler/ExceptionsHandler.java,6\8\685747f257bc582ff40c5eb402d64e9185f4d66c
 t
 Drest/src/main/java/com/internship/rest/restcontrollers/RestUser.java,f\f\ff438354d1f481cb9c3c3264e53bd624d11b44d1
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

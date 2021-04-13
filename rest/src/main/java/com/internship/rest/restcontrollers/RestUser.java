@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import static org.springframework.http.HttpStatus.*;
 
 @Data
@@ -15,12 +14,13 @@ import static org.springframework.http.HttpStatus.*;
 @RestController
 @RequestMapping("/rest/users")
 public class RestUser {
+
     private final UserService userService;
     private final ExceptionsHandler exceptionsHandler;
 
     @GetMapping("/")
-    public ResponseEntity<Object> users() throws Exception {
-        return new ResponseEntity<>(userService.getUsers(), OK);
+    public ResponseEntity<Object> users(@RequestParam(required = false) Long limit) throws Exception {
+        return new ResponseEntity<>(userService.getUsers(limit), OK);
     }
 
     @PostMapping("/add")

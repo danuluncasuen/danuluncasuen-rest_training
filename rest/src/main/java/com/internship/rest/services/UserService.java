@@ -17,13 +17,24 @@ import static org.springframework.http.HttpStatus.*;
 @Data
 @RequiredArgsConstructor
 public class UserService {
+
     private final UserDAO userDAO;
 
-    public List<UserDTO> getUsers() throws CustomUserServiceException {
+    public List<UserDTO> getUsers(Long limit) throws CustomUserServiceException {
         try {
             List<UserDTO> userDTOS = new ArrayList<>();
-            for (User user: userDAO.findAll()) {
-                userDTOS.add(new UserDTO(user));
+            List<User> usersFromDB = userDAO.findAll();
+            if (limit != null) {
+                for (int i=0; i<limit; i++) {
+                    userDTOS.add(new UserDTO(usersFromDB.get(i)));
+                    if (i == usersFromDB.size()-1) {
+                        break;
+                    }
+                }
+            } else {
+                for (User user: usersFromDB) {
+                    userDTOS.add(new UserDTO(user));
+                }
             }
             return userDTOS;
         } catch (Exception e) {

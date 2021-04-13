@@ -21,7 +21,7 @@ function displayUsers(users) {
         let placeholder = "";
         $.each(users, (index, user) => {
             placeholder += 
-            `<tr>;
+            `<tr>
                 <input class='user-id' type='hidden' value='${user.id}'>
                 <td>${(index+1)}</td>;
                 <td>${user.name} ${user.surname} is ${user.age} years old</td>
